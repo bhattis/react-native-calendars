@@ -185,7 +185,7 @@ class Calendar extends Component {
     if (!this.props.markedDates) {
       return false;
     }
-    const dates = this.props.markedDates[day.toString('yyyy-MM-dd')] || [];
+    var dates = this.props.markedDates[day.toString('yyyy-MM-dd')] || [];
     if (dates.length || dates) {
       return dates;
     } else {
